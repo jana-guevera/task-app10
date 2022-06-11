@@ -18,7 +18,7 @@ const sendConfirmEmail = (user) => {
         <p style="color: blue" class="para">
             Welcome, ${user.name}! Please click the below link to confirm your email.
         </p>
-        <a href="http://localhost:3000/confirm_email?userid=${user._id}">Confirm Email</a>
+        <a href="${process.env.URL_ADDRESS}/confirm_email?userid=${user._id}">Confirm Email</a>
         `,
     }
     
